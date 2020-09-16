@@ -4,15 +4,18 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
-  <header>
+<body class="page-body inner-page">
+  <header class="main-header">
     <a href="index.html">
-      <img src="https://via.placeholder.com/130x70" width="130" height="70" alt="Логотип Седона">
+      <img class="main-header-logo" src="https://via.placeholder.com/130x70" width="130" height="70" alt="Логотип Седона">
     </a>
-    <nav>
-      <ul>
+    <nav class="main-navigation">
+      <div class="main-navigation-wrapper">
+      <ul class="site-navigation">
         <li>
           <a href="">Информация</a>
         </li>
@@ -23,35 +26,36 @@
           <a href="">Карта штата</a>
         </li>
         <li>
-          <a href="hotels.html">Гостиницы</a>
+          <a class="current-navigation" href="hotels.html">Гостиницы</a>
         </li>
       </ul>
+    </div>
     </nav>
   </header>
 
-  <main>
+  <main class="inner-page container">
 
-    <section>
-      <h2>Фильтр жилья</h2>
+    <section class="hotel-filter">
+      <h2 class="visually-hidden">Фильтр жилья</h2>
       <!--Здесь будет форма для фильтра-->
     </section>
 
-    <section>
+    <section class="sort-results">
       <h2>Найдено:</h2>
       <span>3</span>
       <p>Сортировка:</p>
-      <ul>
-        <li><a href="">по цене</a></li>
-        <li><a href="">по типу</a></li>
-        <li><a href="">по рейтингу</a></li>
+      <ul class="sort-list">
+        <li class="sort-enabled"><button type="button">по цене</button></li>
+        <li ><button type="submit">по типу</button></li>
+        <li ><button type="button">по рейтингу</button></li>
       </ul>
-      <button type="button"></button>
-      <button type="button"></button>
+      <button class="button-up" type="button"></button>
+      <button class="button-down" type="button"></button>
     </section>
 
-    <section>
-      <h2>Жилье</h2>
-      <ul>
+    <section class="results">
+      <h2 class="visually-hidden">Жилье</h2>
+      <ul class="results-list">
         <li>
           <img src="https://via.placeholder.com/135x90" width="135" height="90" alt="amara resort & spa">
           <a href="">
@@ -59,8 +63,8 @@
           </a>
           <p>гостиница</p>
           <p>от 4000 Р.</p>
-          <button type="button">подробнее</button>
-          <button type="button">забронировать</button>
+          <button class="button button-blue" type="button">подробнее</button>
+          <button class="button button-brown" type="button">забронировать</button>
           <p>Рейтинг: 8,5</p>
         </li>
         <li>
@@ -70,8 +74,8 @@
           </a>
           <p>мотель</p>
           <p>от 3000 Р.</p>
-          <button type="button">подробнее</button>
-          <button type="button">забронировать</button>
+          <button class="button button-blue" type="button">подробнее</button>
+          <button class="button button-brown" type="button">забронировать</button>
           <p>Рейтинг: 8,9</p>
         </li>
         <li>
@@ -81,8 +85,8 @@
           </a>
           <p>апартаменты</p>
           <p>от 2000 Р.</p>
-          <button type="button">подробнее</button>
-          <button type="button">забронировать</button>
+          <button class="button button-blue" type="button">подробнее</button>
+          <button class="button button-brown"type="button">забронировать</button>
           <p>Рейтинг: 9,2</p>
         </li>
       </ul>
@@ -91,26 +95,31 @@
   </main>
 
 
-  <footer>
-    <section>
+  <footer class="page-footer inner-footer">
+    <section class="footer-contacts">
       <h2>#VISITSEDONA</h2>
       <p>ТЕЛ: +7(495) 666-01-66</p>
     </section>
-    <section>
+    <section class="footer-social">
       <ul>
         <li>
-          <a href="#">Вконтакте</a>
+          <a class="social-button button-blue" href="#">Вконтакте</a>
         </li>
         <li>
-          <a href="#">Фейсбук</a>
+          <a class="social-button button-blue" href="#">Фейсбук</a>
         </li>
         <li>
-          <a href="#">Инстаграм</a>
+          <a class="social-button button-blue" href="#">Инстаграм</a>
         </li>
       </ul>
     </section>
-    <section>
-      <a href="https://htmlacademy.ru/intensive/htmlcss">website by HTML Academy</a>
+    <section class="footer-copyright">
+      <a class="copyright-button" href="https://htmlacademy.ru/intensive/htmlcss">
+        <span>
+          website by
+        </span>
+        HTML Academy
+      </a>
     </section>
   </footer>
 
