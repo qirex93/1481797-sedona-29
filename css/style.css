@@ -307,12 +307,12 @@ img {
   color: var(--basic-bold-black);
 }
 
-.copyright-button img:hover,
-.copyright-button img:focus {
-  color: var(--basic-blue-hover);
+.copyright-button svg:hover {
+  fill: var(--basic-blue-hover);
 }
 
-.copyright-button img:active {
+.copyright-button svg:active,
+.copyright-button svg:focus {
   opacity: 0.3;
 }
 
