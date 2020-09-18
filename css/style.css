@@ -105,7 +105,7 @@ img {
 /* Main */
 
 .welcome-highlight {
-  background-color: var(--basic-white);
+  /*background-color: var(--basic-white); чтоб svg было видно, потом в сетке переделается*/
 }
 
 .main-description {
@@ -307,13 +307,13 @@ img {
   color: var(--basic-bold-black);
 }
 
-.copyright-button:hover,
-.copyright-button:focus {
-  color: var(--basic-blue);
+.copyright-button img:hover,
+.copyright-button img:focus {
+  color: var(--basic-blue-hover);
 }
 
-.copyright-button:active {
-  color: var(--black-opacity);
+.copyright-button img:active {
+  opacity: 0.3;
 }
 
 .copyright-button span {
