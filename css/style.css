@@ -46,17 +46,33 @@
 /* Global */
 
 body {
-  min-width: 1280px;
+  max-width: 1200px;
+  min-width: 1200px;
   margin: 0;
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
-
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   color: var(--basic-black);
   text-transform: uppercase;
   background-color: var(--basic-neutral-gray);
+}
+
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  width: auto;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 10px var(--black-opacity);
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
 a {
@@ -68,6 +84,10 @@ img {
   height:auto;
 }
 
+.visually-hidden {
+  visibility: hidden;
+}
+
 /* Main navigation */
 
 .main-navigation {
@@ -76,14 +96,22 @@ img {
   font-weight: bold;
   color: var(--basic-bold-black);
   background-color: transparent;
+  grid-area: 1/1;
 }
 
 .main-navigation-wrapper {
   background-color: var(--basic-white);
+  display: grid;
+  height: 56px;
 }
 
 .site-navigation {
   list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 0px;
+  padding: 0px 72px;
+  text-align: center;
 }
 
 .site-navigation a:hover,
@@ -101,15 +129,65 @@ img {
   color: var(--basic-bold-black);
 }
 
+.site-navigation li {
+  padding-top: 15px;
+}
+
+.site-navigation li:nth-child(1),
+.site-navigation li:nth-child(2) {
+  text-align: left;
+  outline: 5px solid rgba(188, 202, 108, 0.7);
+  outline-offset: -5px;
+}
+
+.site-navigation li:nth-child(3),
+.site-navigation li:nth-child(4) {
+  text-align: right;
+  outline: 5px solid rgba(188, 202, 108, 0.7);
+  outline-offset: -5px;
+}
+
+.main-header {
+  outline: 5px solid rgba(0, 255, 0, 0.7);
+  outline-offset: -5px;
+}
+
+.main-header-logo {
+  outline: 5px solid rgba(255, 0, 0, 0.3);
+  outline-offset: -5px;
+  justify-self: center;
+  grid-area: 1/1;
+  z-index: 1;
+}
+
 
 /* Main */
+.container {
+ display: grid;
+ grid-template-rows: min-content min-content 256px auto 256px 256px auto;
+ padding: 0px;
+ margin: 0px;
+ outline: 5px solid rgba(243, 179, 4, 0.7);
+ outline-offset: -5px;
+}
 
 .welcome-highlight {
-  /*background-color: var(--basic-white); чтоб svg было видно, потом в сетке переделается*/
+  height: 509px;
+  background: url(../img/mask.svg) no-repeat bottom,
+              url(../img/main-background.jpg) no-repeat;
+  outline: 5px solid rgba(82, 65, 18, 0.7);
+  outline-offset: -5px;
 }
+
+
+.welcome-highlight img {
+  padding: 20px 371px;
+}
+
 
 .main-description {
   background-color: var(--basic-white);
+  outline: 5px solid rgba(0, 255, 255 , 0.3);
 }
 
 .main-description h2 {
@@ -117,6 +195,7 @@ img {
   line-height: 26px;
   font-weight: bold;
   color: var(--basic-bold-black);
+  text-align: center;
 }
 
 .main-description p {
@@ -124,12 +203,40 @@ img {
   line-height: 26px;
   font-weight: 400;
   color: var(--basic-black);
+  text-align: center;
 }
 
 /* feature */
 
 .feature {
   background-color: var(--basic-blue);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  outline: 5px solid rgba(255, 0, 0 , 0.3);
+}
+
+.feature-first {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.feature-second {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  
+}
+
+.feature-container {
+  outline: 5px solid rgba(188, 202, 108, 0.7);
+  outline-offset: -5px;
+  display :grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.feature img {
+  outline: 5px solid rgba(188, 202, 108, 0.7);
+  outline-offset: -5px;
 }
 
 .feature h2 {
@@ -137,6 +244,7 @@ img {
   line-height: 21px;
   font-weight: bold;
   color: var(--basic-white);
+  text-align: center;
 }
 
 .feature span, 
@@ -145,20 +253,30 @@ img {
   line-height: 21px;
   font-weight: 400;
   color: var(--basic-white);
+  text-align: center;
 }
 
 /* Recommandation */
 
 .recommendation {
   background-color: var(--basic-white);
+  outline: 5px solid rgba(21, 6, 231, 0.7);
+  outline-offset: -10px;
 }
 
 .recommend-list {
   list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0;
+  padding: 0;
+  column-gap: 20px;
 }
 
 .recommend-item {
   text-align: center;
+  outline: 5px solid rgba(84, 72, 241, 0.7);
+}
 }
 
 .recommend-item h3 {
@@ -179,14 +297,22 @@ img {
 
 .features {
   background-color: var(--basic-gray);
+  display: grid;
 }
 
 .features-list {
   list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  outline: 5px solid rgba(84, 72, 241, 0.7);
 }
 
 .features-item {
   text-align: center;
+  outline: 5px solid rgba(154, 148, 241, 0.7);
 }
 
 .features-item h3 {
@@ -214,6 +340,12 @@ img {
 
 .hotels-search {
   background-color: var(--basic-white);
+  outline: 5px solid rgba(19, 205, 238, 0.7);
+  display: grid;
+  margin: 0px;
+  padding: 0px;
+  justify-items: center;
+  align-items: center;
 }
 
 .hotels-search h2 {
@@ -221,6 +353,7 @@ img {
   line-height: 24px;
   font-weight: bold;
   color: var(--basic-bold-black);
+  text-align: center;
 }
 
 .hotels-search p {
@@ -228,6 +361,13 @@ img {
   line-height: 24px;
   font-weight: normal;
   color: var(--basic-black);
+  text-align: center;
+}
+
+.search-button {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 30px 125px;
 }
 
 
@@ -283,6 +423,15 @@ img {
 
 .main-footer {
   background: var(--white-footer-opacity);
+  display:grid;
+  outline: 5px solid rgba(255, 0, 0, 0.7);
+  outline-offset: -5px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns:  1fr 1fr 1fr;
+  align-items: center;
 }
 
 .footer-contacts {
@@ -290,14 +439,23 @@ img {
   line-height: 26px;
   font-weight: bold;
   color: var(--basic-bold-black);
+  text-align: center;
+  outline: 5px solid rgba(228, 149, 31, 0.7);
+  outline-offset: -10px;
 }
 
 .footer-social {
   text-align: center;
+  outline: 5px solid rgba(228, 149, 31, 0.7);
+  outline-offset: -10px;
+  justify-self: center;
 }
 
 .footer-social ul {
   list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+ 
 }
 
 .footer-copyright {
@@ -305,6 +463,9 @@ img {
   line-height: 26px;
   font-weight: normal;
   color: var(--basic-bold-black);
+  outline: 5px solid rgba(228, 149, 31, 0.7);
+  outline-offset: -10px;
+  justify-self: end;
 }
 
 .copyright-button svg:hover {
