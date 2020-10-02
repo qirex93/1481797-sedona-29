@@ -119,6 +119,10 @@ img {
   color: var(--basic-blue);
 }
 
+.site-navigation a {
+  color: var(--basic-bold-black);
+}
+
 .site-navigation a:active,
 .site-navigation a:visited:active {
   color: var(--basic-bold-black);
@@ -297,7 +301,6 @@ img {
 
 .features {
   background-color: var(--basic-gray);
-  display: grid;
 }
 
 .features-list {
@@ -311,6 +314,7 @@ img {
 }
 
 .features-item {
+  margin-top: 47px;
   text-align: center;
   outline: 5px solid rgba(154, 148, 241, 0.7);
 }
@@ -341,11 +345,9 @@ img {
 .hotels-search {
   background-color: var(--basic-white);
   outline: 5px solid rgba(19, 205, 238, 0.7);
-  display: grid;
   margin: 0px;
   padding: 0px;
-  justify-items: center;
-  align-items: center;
+  position: relative;
 }
 
 .hotels-search h2 {
@@ -354,6 +356,10 @@ img {
   font-weight: bold;
   color: var(--basic-bold-black);
   text-align: center;
+  min-width: 435px;
+  margin-top: 58px;
+  margin-bottom: 40px;
+  
 }
 
 .hotels-search p {
@@ -362,12 +368,14 @@ img {
   font-weight: normal;
   color: var(--basic-black);
   text-align: center;
+  margin-bottom: 128px;
 }
 
 .search-button {
-  margin-right: auto;
-  margin-left: auto;
   padding: 30px 125px;
+  position: absolute;
+  top: 214px;
+  right: 330px;
 }
 
 
@@ -423,7 +431,6 @@ img {
 
 .main-footer {
   background: var(--white-footer-opacity);
-  display:grid;
   outline: 5px solid rgba(255, 0, 0, 0.7);
   outline-offset: -5px;
 }
@@ -485,6 +492,10 @@ img {
 
 .modal {
   background-color: var(--basic-white); 
+}
+
+.modal-hotels {
+  display: none;
 }
 
 
