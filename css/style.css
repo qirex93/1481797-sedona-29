@@ -176,6 +176,7 @@ img {
 
 .main-description {
   background-color: var(--basic-white);
+  min-height: 216px;
 }
 
 .main-description h2 {
@@ -184,6 +185,9 @@ img {
   font-weight: bold;
   color: var(--basic-bold-black);
   text-align: center;
+  margin-top: 43px;
+  margin-left: 365px;
+  width: 470px;
 }
 
 .main-description p {
@@ -192,14 +196,13 @@ img {
   font-weight: 400;
   color: var(--basic-black);
   text-align: center;
+  margin-top: 16px;
 }
 
 /* feature */
 
 .feature {
   background-color: var(--basic-blue);
-  display: grid;
-  grid-template-columns: 1fr 2fr;
 }
 
 .feature-first {
@@ -217,6 +220,8 @@ img {
   display :grid;
   justify-items: center;
   align-items: center;
+  margin: 0px;
+  padding: 0px;
 }
 
 .feature h2 {
@@ -225,6 +230,7 @@ img {
   font-weight: bold;
   color: var(--basic-white);
   text-align: center;
+  margin-top: 47px;
 }
 
 .feature span, 
@@ -235,6 +241,19 @@ img {
   color: var(--basic-white);
   text-align: center;
 }
+
+.feature-first p {
+  margin-top: 23px;
+  margin-bottom: 54px;
+  width: 297px;
+}
+
+.feature-second p {
+  width: 301px;
+  margin-top: 23px;
+  margin-bottom: 51px;
+}
+
 
 /* Recommandation */
 
@@ -504,7 +523,6 @@ img {
   background-color: var(--basic-white);
   margin-bottom: 2px;
   display: flex;
-  flex-direction: row;
   min-height: 86px;
   outline: 5px solid rgba(171, 243, 4, 0.7);
   outline-offset: -5px;
@@ -544,7 +562,6 @@ img {
 .sort-list {
   list-style:none;
   display: flex;
-  flex-direction: row;
   margin: 0px;
   padding: 0px;
   outline: 5px solid rgba(171, 243, 4, 0.7);
@@ -647,7 +664,6 @@ color: var(--black-opacity);
   grid-template-columns: 135px 1fr auto;
   margin-bottom: 2px;
   height: 150px;
-  align-content: start;
   
 }
 
