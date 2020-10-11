@@ -532,10 +532,9 @@ img {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  margin-top: 23px;
+  margin-top: 20px;
   margin-left: 168px;
   width: 166px;
-
 }
 
 .footer-contacts p {
@@ -543,7 +542,11 @@ img {
   line-height: 26px;
   font-weight: 700;
   margin-left: 125px;
-  margin-top: -13px;
+  margin-top: -12px;
+}
+
+.footer-contacts a {
+  color: var(--basic-bold-black)
 }
 
 .footer-social {
@@ -566,7 +569,7 @@ img {
   display: block;
   background-color: var(--basic-blue);
   position: relative;
-  margin-top: 15px;
+  margin-top: 11px;
 }
 
 .footer-social .twitter {
@@ -606,7 +609,7 @@ img {
   font-weight: normal;
   color: var(--basic-bold-black);
   justify-self: end;
-  margin-top: 25px;
+  margin-top: 17px;
   margin-right: 138px;
   position: relative;
 }
@@ -618,9 +621,6 @@ img {
   top: 9px;
 }
 
-.inner-footer {
-
-}
 
 .copyright-button svg:hover {
   fill: var(--basic-blue-hover);
