@@ -151,6 +151,14 @@ img {
   text-align: left;
 }
 
+.site-navigation li:nth-child(2) {
+  margin-left: -35px;
+}
+
+.site-navigation li:nth-child(3) {
+  margin-right: -37px;
+}
+
 .site-navigation li:nth-child(3),
 .site-navigation li:nth-child(4) {
   text-align: right;
@@ -194,8 +202,8 @@ img {
   font-weight: bold;
   color: var(--basic-bold-black);
   text-align: center;
-  margin-top: 43px;
-  margin-left: 365px;
+  margin-top: 42px;
+  margin-left: 366px;
   width: 470px;
 }
 
@@ -205,7 +213,7 @@ img {
   font-weight: 400;
   color: var(--basic-black);
   text-align: center;
-  margin-top: 16px;
+  margin-top: 41px;
 }
 
 /* feature */
@@ -239,7 +247,14 @@ img {
   font-weight: bold;
   color: var(--basic-white);
   text-align: center;
-  margin-top: 47px;
+}
+
+.feature-first h2 {
+  margin-top: 42px;
+}
+
+.feature-second h2 {
+  margin-top: 46px;
 }
 
 .feature span, 
@@ -252,23 +267,24 @@ img {
 }
 
 .feature-first p {
-  margin-top: 23px;
-  margin-bottom: 54px;
+  margin-top: 17px;
+  margin-bottom: 51px;
   width: 297px;
 }
 
 .feature-second p {
   width: 301px;
-  margin-top: 23px;
-  margin-bottom: 51px;
+  margin-top: 17px;
+  margin-bottom: 50px;
 }
+
 
 
 /* Recommandation */
 
 .recommendation {
   background-color: var(--basic-white);
-  min-height: 330px;
+  height: 330px;
 }
 
 .recommend-list {
@@ -289,8 +305,13 @@ img {
 
 .recommend-item div {
  position: absolute;
- top: -90px;
+ top: -100px;
  right: 110px;
+}
+
+.recommend-item .souvenirs-icon {
+  top: -105px;
+  right: 115px;
 }
 
 .recommend-item .house-icon {
@@ -322,6 +343,7 @@ img {
   line-height: 21px;
   font-weight: bold;
   color: var(--basic-bold-black);
+  margin-top: 0px;
 }
 
 .recommend-item p {
@@ -348,16 +370,21 @@ img {
   justify-content: space-between;
   margin: 0px;
   padding: 0px;
-  margin-left: 96px;
-  margin-right: 77px;
- 
+  
 }
 
 .features-item {
   text-align: center;
   margin-top: 47px;
-  margin-bottom: 54px;
+}
 
+.feature-third {
+  margin-left: 96px;
+}
+
+
+.feature-fifth {
+  margin-right: 71px;
 }
 
 .features-item h3 {
@@ -366,15 +393,16 @@ img {
   font-weight: bold;
   width: 119px;
   margin-top: 0px;
-  margin-left: 70px;
   color: var(--basic-bold-black);
+  margin-left: 45px;
 }
 
 .features-item p {
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
-  margin-top: 23px;
+  margin-left: -25px;
+  margin-top: 24px;
   width: 258px;
   color: var(--basic-black);
 }
@@ -384,8 +412,22 @@ img {
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
-  margin-top: 25px;
+  width: 51px;
+  margin-top: 26px;
   color: var(--basic-black);
+  padding-left: 80px;
+}
+
+.feature-third span {
+  margin-left: 0px;
+}
+
+.feature-fourth span {
+  margin-left: 0px;
+}
+
+.feature-fifth span {
+  margin-left: 0px;
 }
 
 /* hotels-search */
@@ -405,29 +447,29 @@ img {
   text-align: center;
   min-width: 435px;
   margin-top: 58px;
-  margin-bottom: 40px;
-  
 }
 
 .hotels-search p {
+  display: block;
   font-size: 14px;
   line-height: 24px;
   font-weight: normal;
   color: var(--basic-black);
   text-align: center;
-  margin-bottom: 128px;
+  padding-top: 4px;
+  margin-bottom: 130px;
 }
 
 .search-button {
   padding: 30px 125px;
   position: absolute;
-  top: 212px;
+  top: 204px;
   width: 568px;
   right: 316px;
   outline: none;
 }
  .hotels-search iframe {
-   margin-bottom: -120px;
+   margin-bottom: -125px;
    z-index: -5;
    border: none;
  }
@@ -504,7 +546,7 @@ img {
   line-height: 26px;
   font-weight: 700;
   margin-top: 23px;
-  margin-left: 153px;
+  margin-left: 168px;
   width: 166px;
 
 }
@@ -513,8 +555,8 @@ img {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  margin-left: 111px;
-  margin-top: -15px;
+  margin-left: 125px;
+  margin-top: -13px;
 }
 
 .footer-social {
@@ -537,6 +579,7 @@ img {
   display: block;
   background-color: var(--basic-blue);
   position: relative;
+  margin-top: 15px;
 }
 
 .footer-social .twitter {
@@ -576,14 +619,15 @@ img {
   font-weight: normal;
   color: var(--basic-bold-black);
   justify-self: end;
-  margin-right: 139px;
+  margin-top: 25px;
+  margin-right: 138px;
   position: relative;
 }
 
 .footer-copyright span {
   position: absolute;
   width: 74px;
-  right: 130px;
+  right: 123px;
   top: 9px;
 }
 
@@ -610,7 +654,7 @@ img {
   position: absolute;
   width: 568px;
   height: 395px;
-  top: 298px;
+  top: 290px;
   left: 316px;
 }
 
