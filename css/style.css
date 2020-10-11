@@ -174,7 +174,7 @@ img {
 /* Main */
 .container {
  display: grid;
- grid-template-rows: min-content min-content 256px auto 256px 256px auto;
+ grid-template-rows: min-content min-content 256px auto 256px auto min-content;
  padding: 0px;
  margin: 0px;
 }
@@ -370,6 +370,7 @@ img {
   justify-content: space-between;
   margin: 0px;
   padding: 0px;
+  min-height: 256px;
   
 }
 
