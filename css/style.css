@@ -780,6 +780,7 @@ img {
   outline:none;
   width: 11px;
   height: 10px;
+  margin-top: 12px;
 }
 
 .button-up svg {
@@ -788,7 +789,11 @@ img {
 }
 
 .button-down {
-  margin-left: 12px;
+  margin-right: 5px;
+}
+
+.button-up {
+  margin-right: 5px;
 }
 
 .button-down svg {
@@ -843,16 +848,20 @@ img {
   margin: 0px;
   padding: 0px;
   grid-template-columns: 135px 1fr auto;
-  margin-bottom: 2px;
+  margin-bottom: 1px;
   height: 150px;
   
 }
 
 .results-list img {
   display: block;
-  margin-left: 68px;
+  margin-left: 72px;
   margin-top: 29px;
-  
+}
+
+.results-list h3 {
+  margin-top: 24px;
+  margin-left: 1px;
 }
 
 .results-list .result-description {
@@ -865,17 +874,18 @@ img {
   grid-template-columns: min-content min-content;
 }
 
-.description-container .type {
+.results-list .type {
   width: 107px;
   height: 21px;
-  margin-top: -15px;
+  margin-top: -14px;
+  margin-left: 2px;
 }
 
-.description-container .price {
+.results-list .price {
   width: 96px;
   height: 21px;
-  margin-top: -15px;
-  margin-left: 7px;
+  margin-top: -14px;
+  margin-left: 8px;
 }
 
 .results-list .button-blue {
@@ -884,7 +894,8 @@ img {
   font-size: 14px;
   line-height: 21px;
   outline: none;
-  margin-top: 4px;
+  padding-top: 2px;
+  margin-left: 2px;
 }
 
 .results-list .button-brown {
@@ -892,7 +903,8 @@ img {
   height: 27px;
   font-size: 14px;
   line-height: 21px;
-  margin-top: 4px;
+  padding-top: 2px;
+  margin-left: 2px;
 }
 
 .results-list .rating {
@@ -901,7 +913,6 @@ img {
   height: 27px;
   width: 110px;
   text-align: center;
-  padding-top: 3px;
 }
 
 .rating-container {
@@ -909,16 +920,17 @@ img {
 }
 
 .results-list .stars {
-  margin-top: 29px;
-  margin-right: -115px;
+  margin-top: 28px;
+  margin-right: -112px;
   height: 17px;
-  width: 110px;
+  width: 100px;
   transform: rotate(180deg);
 }
 
 .results-list .rating {
   background-color: var(--basic-neutral-gray);
   color: var(--rating-text);
+  padding-top: 3px;
 }
 
 .results-list .star {
@@ -927,6 +939,7 @@ img {
   width: 18px;
   background: url(../img/star.svg) 0 0 no-repeat;
   transform: rotate(180deg);
+  margin-left: 2px;
 }
 
 .stars .hidden {
