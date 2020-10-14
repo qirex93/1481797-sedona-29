@@ -37,7 +37,94 @@
 
     <section class="hotel-filter">
       <h2 class="visually-hidden">Фильтр жилья</h2>
-      <!--Здесь будет форма для фильтра-->
+      <div class="checkbox-container hotel-options">
+        <h3>Инфраструктура:</h3>
+        <ul>
+          <li>
+            <label class="check_box_label">
+              <input class="check_input visually-hidden" type="checkbox" checked>
+              <span class="check_box"></span>
+              бассейн
+            </label>
+          </li>
+          <li>
+            <label class="check_box_label">
+              <input class="check_input visually-hidden" type="checkbox">
+              <span class="check_box"></span>
+              парковка
+            </label>
+          </li>
+          <li>
+            <label class="check_box_label">
+              <input class="check_input visually-hidden" type="checkbox">
+              <span class="check_box"></span>
+              wi-fi
+            </label>
+          </li>
+        </ul>
+      </div>
+
+      <div class="checkbox-container hotel-type">
+        <h3>Тип жилья:</h3>
+        <ul>
+          <li>
+            <label class="check_box_label">
+              <input class="check_input visually-hidden" type="checkbox" checked>
+              <span class="check_box"></span>
+              гостиница
+            </label>
+          </li>
+          <li>
+            <label class="check_box_label">
+              <input class="check_input visually-hidden" type="checkbox" checked>
+              <span class="check_box"></span>
+              мотель
+            </label>
+          </li>
+          <li>
+            <label class="check_box_label">
+              <input class="check_input visually-hidden" type="checkbox" checked>
+              <span class="check_box"></span>
+              апартаменты
+            </label>
+          </li>
+        </ul>
+      </div>
+
+      <div class="price-container">
+        <h3 class="visually-hidden">Стоимость в сутки (Р):</h3>
+        <form method="get" action="https://echo.htmlacademy.ru">
+          <fieldset class="filter-item">
+            <legend>Стоимость в сутки (Р):</legend>
+            <div class="range-filter">
+              <div class="price-controls">
+                <label class="min-price">
+                  от <input type="number" name="min-price" value="0">
+                </label>
+                <div class="border-side"></div>
+                <label class="max-price">
+                  до <input type="number" name="max-price" value="3000">
+                </label>
+              </div>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar" style="
+                      width: 80%;
+                      margin-left: 0%
+                    "></div>
+                </div>
+                <div class="toggle toggle-min" tabindex="0" style="
+                    left: 0%
+                  "></div>
+                <div class="toggle toggle-max" tabindex="0" style="
+                    left: 80%
+                  "></div>
+              </div>
+            </div>
+          </fieldset>
+          <button class="filter-button" type="submit">Показать</button>
+        </form>
+      </div>
     </section>
 
     <section class="sort-results">
