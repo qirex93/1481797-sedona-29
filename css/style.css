@@ -218,7 +218,7 @@ img {
   font-weight: 400;
   color: var(--basic-black);
   text-align: center;
-  margin-top: 41px;
+  margin-top: 44px;
 }
 
 /* feature */
@@ -272,7 +272,7 @@ img {
 }
 
 .feature-first p {
-  margin-top: 17px;
+  margin-top: 19px;
   margin-bottom: 51px;
   width: 297px;
 }
@@ -408,7 +408,7 @@ img {
   line-height: 21px;
   font-weight: normal;
   margin-left: -25px;
-  margin-top: 24px;
+  margin-top: 25px;
   width: 258px;
   color: var(--basic-black);
 }
@@ -419,7 +419,7 @@ img {
   line-height: 21px;
   font-weight: normal;
   width: 51px;
-  margin-top: 26px;
+  margin-top: 27px;
   color: var(--basic-black);
   padding-left: 80px;
 }
@@ -451,7 +451,7 @@ img {
   font-weight: normal;
   color: var(--basic-black);
   text-align: center;
-  padding-top: 4px;
+  padding-top: 7px;
   margin-bottom: 130px;
 }
 
