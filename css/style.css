@@ -641,6 +641,10 @@ img {
   color: var(--basic-bold-black);
 }
 
+.inner-footer {
+  margin-top: 2px;
+}
+
 /* modal */
 
 .modal {
@@ -667,7 +671,7 @@ img {
   
 }
 
-.search-form div {
+.search-form fieldset {
   display: flex;
   justify-content: space-between;
   align-content: center;
@@ -679,6 +683,9 @@ img {
   font-size: 14px;
   line-height: 26px;
   height: 38px;
+  border:none;
+  margin: 0;
+  padding: 0;
 }
 
 .search-form .date-container {
