@@ -1000,7 +1000,7 @@ img {
 
 .range-controls {
   position: relative;
-  height: 15px;
+  height: 40px;
   padding-top: 20px;
   border-radius: 5px;
 }
@@ -1018,8 +1018,7 @@ img {
 
 .range-controls .toggle {
   position: absolute;
-  top: 12px;
-  left: 0;
+  top: 11px;
   width: 4px;
   height: 4px;
   padding: 0;
@@ -1032,14 +1031,6 @@ img {
 
 .range-controls .toggle:hover {
   border: 9px solid var(--basic-white);
-}
-
-.range-controls .toggle-min {
-  left: 18px;
-}
-
-.range-controls .toggle-max {
-  left: 160px;
 }
 
 .price-controls {
@@ -1109,7 +1100,7 @@ img {
   color: var(--basic-white);
   width: 137px;
   height: 36px;
-  margin-top: 20px;
+  margin-top: -6px;
   margin-left: 85px;
   text-transform: uppercase;
   font-family: inherit;

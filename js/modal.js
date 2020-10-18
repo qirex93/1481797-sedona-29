@@ -52,6 +52,7 @@ childrenPlusButton.addEventListener("click", function (evt) {
     childrenCountInput.setAttribute("value", parseInt(volNumber)+1)
 })
 
+
 /* minus count button*/
 
 const  adultsMinusButton = searchPopup.querySelector(".adults-container .minus");
@@ -69,3 +70,7 @@ childrenMinusButton.addEventListener("click", function (evt) {
     const volNumber = childrenCountInput.getAttribute("value")
     childrenCountInput.setAttribute("value", parseInt(volNumber)-1)
 })
+
+
+
+
