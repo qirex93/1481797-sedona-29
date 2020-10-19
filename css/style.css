@@ -863,6 +863,10 @@ img {
   fill: var(--basic-blue-hover);
 }
 
+.modal-off {
+  display: none;
+}
+
 /* Animations */
 
 @keyframes lift-up {
