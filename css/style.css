@@ -409,7 +409,7 @@ img {
   line-height: 21px;
   font-weight: normal;
   margin-left: -25px;
-  margin-top: 25px;
+  margin-top: 22px;
   width: 258px;
   color: var(--basic-black);
 }
@@ -473,7 +473,7 @@ img {
   width: 568px; 
   right: 316px;
   height: 86px;
-  margin-top: 1px;
+  margin-top: -1px;
   margin-left: 316px;
 }
 
@@ -728,34 +728,49 @@ img {
   position: relative;
 }
 
+.search-form .date-container:nth-child(2) {
+  margin-top: 2px;
+}
+
 .date-container button {
   position: absolute;
-  left: 422px;
+  left: 429px;
   top: 6px;
   width: 21px;
   height: 23px;
   border: none;
+  padding: 0px;
   background-color: inherit;
 }
 
 .count-container .cross {
   position: absolute;
-  left:198px;
+  left:200px;
   top: 10px;
   width: 11px;
   height: 11px;
   border: none;
+  padding: 0;
   background-color: inherit;
 }
 
 .count-container .minus {
   position: absolute;
-  left:123px;
+  left:126px;
   top: 8px;
   width: 11px;
   height: 11px;
   border: none;
+  padding: 0;
   background-color: inherit;
+}
+
+.children-container .cross {
+  left: 205px;
+}
+
+.children-container .minus {
+  left: 129px;
 }
 
 .modal-hotels input {
@@ -783,10 +798,6 @@ img {
   outline-offset: -2px;
 }
 
-.date-container:nth-child(2) {
-  margin-top: 4px;
-}
-
 .date-container input {
   padding-left: 15px;
 }
@@ -810,9 +821,9 @@ img {
 }
 
 .modal-hotels .count-container {
-  margin-top: 5px;
   width: 228px;
   position: relative;
+  margin-top: 4px;
 }
 
 .search-form .adults,
@@ -821,19 +832,16 @@ img {
   text-align: center;
 }
 
-
 .modal-hotels label {
   height: 26px;
   width: 100px;
   padding-top: 6px;
-
 }
 
 .modal-hotels .children-label {
   padding-left: 50px;
   width: auto;
 }
-
 
 .modal-button {
   align-self: flex-end;
