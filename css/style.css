@@ -425,7 +425,6 @@ img {
   padding-left: 80px;
 }
 
-
 /* hotels-search */
 
 .hotels-search {
@@ -473,13 +472,12 @@ img {
   width: 568px; 
   right: 316px;
   height: 86px;
-  margin-top: -1px;
   margin-left: 316px;
 }
 
  .hotels-search iframe {
    border: none;
-   margin-top: 290px;
+   margin-top: 291px;
    height: 474px;
    z-index: 2; 
    margin-bottom: -5px;
@@ -487,7 +485,7 @@ img {
 
  .hotels-search img {
   position: absolute;
-  top: 290px;
+  top: 291px;
   left: 0px;
   z-index: -1;
 }
@@ -565,7 +563,7 @@ img {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  margin-top: 23px;
+  margin-top: 22px;
   margin-left: 168px;
   width: 166px;
 }
@@ -585,7 +583,6 @@ img {
 .footer-social {
   justify-self: center;
   text-align: center;
-  margin-top: 5px;
 }
 
 .footer-social ul {
