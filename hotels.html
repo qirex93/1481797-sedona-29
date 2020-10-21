@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style-minimized.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page-body inner-page">
@@ -127,17 +127,17 @@
       <p>Сортировка:</p>
       <ul class="sort-list">
         <li class="sort-enabled"><button type="button">по цене</button></li>
-        <li><button type="submit">по типу</button></li>
+        <li><button type="button">по типу</button></li>
         <li><button type="button">по рейтингу</button></li>
       </ul>
       <div class="up-down-filter">
-        <button class="button-up" type="button">
+        <button class="button-up" type="button" aria-label="sort-up">
           <svg width="11" height="10" viewBox="0 0 11 10" focusable="false" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path d="M5.5 10L0 0H11" />
           </svg>
         </button>
-        <button class="button-down" type="button">
+        <button class="button-down" type="button" aria-label="sort-down">
           <svg class="active" width="11" height="10" focusable="false" viewBox="0 0 11 10" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path d="M5.5 10L0 0H11" />

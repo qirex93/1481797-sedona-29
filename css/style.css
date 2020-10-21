@@ -36,7 +36,7 @@
   font-weight: 400;
   src: local("PT Sans"), local("PTSans"),
   url("../fonts/ptsans.woff2") format("woff2"),
-  url("../fonts/ptsans.woff2") format("woff");
+  url("../fonts/ptsans.woff") format("woff");
 }
 
 @font-face {
@@ -45,7 +45,7 @@
   font-weight: 700;
   src: local("PT Sans Bold"), local("PTSansBold"),
   url("../fonts/ptsansbold.woff2") format("woff2"),
-  url("../fonts/ptsansbold.woff2") format("woff");
+  url("../fonts/ptsansbold.woff") format("woff");
 }
 
 /* Global */
@@ -188,7 +188,7 @@ img {
   height: 509px;
   background: url(../img/mask.svg) no-repeat bottom,
               url(../img/main-background.jpg) no-repeat;
-  background-color: var(--rating-text);
+  background-color: var(--basic-gray);
 }
 
 
@@ -944,9 +944,9 @@ img {
 .check_box {
   position: absolute;
   margin-left: -40px;
+  background-image: url(../img/checkbox-off.svg);
   width: 23px;
   height: 23px;
-  background-image: url(../img/checkbox-off.svg);
 }
 
 .check_input:focus + .check_box {
@@ -954,6 +954,7 @@ img {
 }
 
 .check_input:checked + .check_box {
+  width: 26px;
   background-image: url(../img/checkbox-on.svg);
 }
 
@@ -962,6 +963,7 @@ img {
 }
 
 .check_input:disabled:checked + .check_box {
+  width: 26px;
   background-image: url(../img/checkbox-on-disabled.svg);
 }
 
@@ -1217,22 +1219,19 @@ img {
 .button-down {
   background: var(--basic-white);
   border: none;
-  width: 11px;
-  height: 10px;
-  margin-top: 12px;
+  width: 20px;
+  height: 20px;
+  margin-top: 13px;
 }
 
 .button-up svg {
-  transform: rotate(-180deg) translateX(5px) translateY(4px);
+  transform: rotate(-180deg) translateX(0px) translateY(4px);
   fill: var(--gray-button-direction);
 }
 
 .button-down {
-  margin-right: 5px;
-}
-
-.button-up {
-  margin-right: 5px;
+  margin-left: 4px;
+  margin-right: -5px;
 }
 
 .button-down svg {
