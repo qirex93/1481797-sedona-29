@@ -140,8 +140,8 @@
         <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
           <fieldset class="date-container">
             <label class="date-come-label" for="come-in">Дата заезда:</label>
-            <input class="date-come" name="come-in-date" id="come-in" type="text" value="24 апреля 2017"
-              placeholder="например: 24 апреля 2017" required>
+            <input class="date-come" name="come-in-date" id="come-in" type="text" pattern="\d{1,2}\s[А-Яа-я]*?\s[0-9]{4}" value="24 апреля 2017"
+              placeholder="например: 24 апреля 2017">
             <button class="calendar" type="button" aria-label="календарь">
               <svg width="21" height="23" viewBox="0 0 21 23" focusable="false" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -153,8 +153,8 @@
           </fieldset>
           <fieldset class="date-container">
             <label class="date-leave-label" for="leaving">Дата выезда:</label>
-            <input class="date-leave" name="leaving-date" id="leaving" type="text" value="4 июля 2017"
-              placeholder="например: 24 апреля 2017" required>
+            <input class="date-leave" name="leaving-date" id="leaving" type="text" pattern="\d{1,2}\s[А-Яа-я]*?\s[0-9]{4}" value="4 июля 2017"
+              placeholder="например: 24 апреля 2017">
             <button class="calendar" type="button" aria-label="календарь">
               <svg width="21" height="23" viewBox="0 0 21 23" focusable="false" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -257,7 +257,7 @@
       </section>
     </div>
   </footer>
-
+   
   <script src="js/modal-minimized.js"></script>
 </body>
 

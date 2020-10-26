@@ -2,6 +2,7 @@ const searchButton = document.querySelector(".search-button");
 const searchPopup = document.querySelector(".modal-hotels");
 const inputs = document.querySelectorAll(".modal-hotels input");
 const buttons = document.querySelectorAll(".modal-hotels button");
+const searchForm = document.querySelector(".search-form");
 
 const adultsPlusButton = searchPopup.querySelector(".adults-container .cross");
 const adultsCountInput = searchPopup.querySelector(".adults");
@@ -9,6 +10,17 @@ const childrenMinusButton = searchPopup.querySelector(".children-container .minu
 const adultsMinusButton = searchPopup.querySelector(".adults-container .minus");
 const childrenPlusButton = searchPopup.querySelector(".children-container .cross");
 const childrenCountInput = searchPopup.querySelector(".children");
+const comeInInput = searchPopup.querySelector(".date-come");
+const leaveInput = searchPopup.querySelector(".date-leave");
+
+let isStorageSupport = true;
+let storage = "";
+
+try {
+  storage = localStorage.getItem("adults-count");
+} catch (err) {
+  isStorageSupport = false;
+}
 
 
 var initsScript = function () {
@@ -77,3 +89,20 @@ childrenMinusButton.addEventListener("click", function (evt) {
   const volNumber = childrenCountInput.getAttribute("value")
   childrenCountInput.setAttribute("value", parseInt(volNumber) - 1)
 })
+
+
+/* error */
+
+searchForm.addEventListener("submit", function (evt) {
+  if (!adultsCountInput.value || !childrenCountInput.value
+     || !comeInInput.value || !leaveInput.value ) {
+    evt.preventDefault();
+    searchPopup.classList.remove("modal-error");
+    searchPopup.offsetWidth = searchPopup.offsetWidth;
+    searchPopup.classList.add("modal-error");
+  } else {
+    if (isStorageSupport) {
+      localStorage.setItem("login", loginLogin.value);
+    }
+  }
+});

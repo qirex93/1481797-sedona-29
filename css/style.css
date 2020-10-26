@@ -855,6 +855,10 @@ img {
   display: none;
 }
 
+.modal-error {
+  animation: shake 0.6s;
+}
+
 /* Animations */
 
 @keyframes lift-up {
@@ -874,6 +878,28 @@ img {
   }
   100% {
     transform: translateY(0px);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
   }
 }
 
@@ -1165,7 +1191,7 @@ img {
   margin-left: 40px;
 }
 
-.sort-list button {
+.sort-list a {
   color: var(--black-opacity);
   border:none;
   border-bottom: 1px dotted var(--basic-blue-hover);
@@ -1176,17 +1202,17 @@ img {
   text-transform: uppercase;
 }
 
-.sort-list .sort-enabled button {
+.sort-list .sort-enabled a {
   color: var(--basic-blue);
   border:none;
 }
 
-.sort-list button:hover, 
-.sort-list  button:focus {
+.sort-list a:hover, 
+.sort-list  a:focus {
   color: var(--basic-blue);
 }
 
-.sort-list button:active {
+.sort-list a:active {
   outline:none;
   color: var(--basic-bold-black);
 }
@@ -1194,30 +1220,28 @@ img {
 .up-down-filter {
   margin-left: auto;
   align-self: center;
-  margin-right: 69px;
+  margin-right: 65px;
 }
 
 .button-up,
 .button-down {
   background: var(--basic-white);
-  border: none;
   width: 20px;
-  height: 20px;
+  height: 22px;
   margin-top: 13px;
 }
 
 .button-up svg {
-  transform: rotate(-180deg) translateX(0px) translateY(4px);
+  transform: rotate(-180deg) translateX(-1px) translateY(4px);
   fill: var(--gray-button-direction);
 }
 
 .button-down {
-  margin-left: 4px;
-  margin-right: -5px;
+  margin-left: 0px;
 }
 
 .button-down svg {
-  transform: translateX(-5px) translateY(-4px);
+  transform: translateX(1px) translateY(-4px);
   fill: var(--gray-button-direction);
 }
 
@@ -1237,7 +1261,6 @@ img {
 .up-down-filter .active {
   fill: var(--basic-blue);
 }
-
 
 /* results */
 
@@ -1311,19 +1334,19 @@ img {
 
 .results-list .button-blue {
   width: 110px;
-  height: 27px;
+  height: 24px;
   font-size: 14px;
   line-height: 21px;
-  padding-top: 2px;
+  padding-top: 3px;
   margin-left: 2px;
 }
 
 .results-list .button-brown {
   width: 142px;
-  height: 27px;
+  height: 24px;
   font-size: 14px;
   line-height: 21px;
-  padding-top: 2px;
+  padding-top: 3px;
   margin-left: 2px;
 }
 
@@ -1362,7 +1385,7 @@ img {
 }
 
 .two-stars {
-  width: 44px;
+  width: 43px;
 }
 
 .hotel-page:hover .hotel-name,
