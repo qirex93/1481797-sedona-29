@@ -175,11 +175,11 @@ img {
   z-index: 1;
 }
 
-
 /* Main */
+
 .container {
  display: grid;
- grid-template-rows: min-content min-content 256px auto 256px auto min-content;
+ grid-template-rows: min-content min-content auto;
  padding: 0px;
  margin: 0px;
 }
@@ -188,7 +188,7 @@ img {
   height: 509px;
   background: url(../img/mask.svg) no-repeat bottom,
               url(../img/main-background.jpg) no-repeat;
-  background-color: var(--basic-gray);
+  background-color: var(--calendar);
 }
 
 
@@ -222,10 +222,23 @@ img {
   margin-top: 44px;
 }
 
-/* feature */
+/* features-section */
+
+.features-section {
+  padding: 0px;
+  margin: 0px;
+}
+
+.features-list {
+  display: grid;
+  grid-template-rows: 256px min-content 256px 256px;
+  list-style: none;
+}
 
 .feature {
   background-color: var(--basic-blue);
+  padding: 0px;
+  margin: 0px;
 }
 
 .feature-first {
@@ -236,7 +249,6 @@ img {
 .feature-second {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  
 }
 
 .feature-container {
@@ -284,13 +296,12 @@ img {
   margin-bottom: 50px;
 }
 
-
-
 /* Recommandation */
 
 .recommendation {
   background-color: var(--basic-white);
   min-height: 330px;
+  width: 1200px;
 }
 
 .recommend-list {
@@ -368,6 +379,7 @@ img {
   background-color: var(--basic-gray);
   min-height: 256px;
   z-index: 4;
+  width: 1200px;
 }
 
 .features-list {
@@ -389,7 +401,6 @@ img {
 .feature-third {
   margin-left: 96px;
 }
-
 
 .feature-fifth {
   margin-right: 71px;
@@ -915,6 +926,7 @@ img {
 .filter-form {
   color: var(--basic-white); 
   background: url(../img/filter-background.jpg) no-repeat;
+  background-color: var(--calendar);
   min-width: 1200px;
   min-height: 217px;
   display: grid;
@@ -1186,7 +1198,7 @@ img {
 .sort-list button {
   color: var(--black-opacity);
   border:none;
-  border-bottom: 1px dashed var(--basic-blue-hover);
+  border-bottom: 1px dotted var(--basic-blue-hover);
   background-color: var(--basic-white);
   padding: 0px;
   font-size: 12px;
