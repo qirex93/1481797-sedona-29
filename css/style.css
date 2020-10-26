@@ -113,7 +113,7 @@ img {
   grid-area: 1/1; 
 }
 
-.main-navigation-wrapper {
+.main-header {
   background-color: var(--basic-white);
   display: grid;
   height: 56px;
@@ -149,10 +149,12 @@ img {
 
 .site-navigation li {
   padding-top: 15px;
+  width: 100px;
 }
 
 .site-navigation li:nth-child(1),
 .site-navigation li:nth-child(2) {
+  justify-self: start;
   text-align: left;
 }
 
@@ -160,13 +162,14 @@ img {
   margin-left: -35px;
 }
 
-.site-navigation li:nth-child(3) {
-  margin-right: -37px;
-}
-
 .site-navigation li:nth-child(3),
 .site-navigation li:nth-child(4) {
   text-align: right;
+  justify-self: end;
+}
+
+.site-navigation li:nth-child(3) {
+  margin-right: -37px;
 }
 
 .main-header-logo {
