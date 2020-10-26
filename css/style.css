@@ -323,7 +323,7 @@ img {
   margin-top: 160px;
 }
 
-.recommend-item div {
+.recommend-item svg {
  position: absolute;
  top: -100px;
  right: 110px;
@@ -331,31 +331,7 @@ img {
 
 .recommend-item .souvenirs-icon {
   top: -105px;
-  right: 115px;
-}
-
-.recommend-item .house-icon {
-  background-image: url(../img/icon-house.png);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  min-width: 75px;
-  min-height: 72px;
-}
-
-.recommend-item .food-icon {
-  background-image: url(../img/icon-burger.png);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  min-width: 75px;
-  min-height: 70px;
-}
-
-.recommend-item .souvenirs-icon {
-  background-image: url(../img/icon-gift.png);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  min-width: 64px;
-  min-height: 77px;
+  right: 116px;
 }
 
 .recommend-item h3 {
@@ -618,35 +594,26 @@ img {
   margin-top: 11px;
 }
 
+.footer-social svg {
+  fill: var(--basic-white);
+}
+
 .footer-social .twitter {
   position: absolute;
   top: 16px;
   left: 15px;
-  width: 17px;
-  height: 16px;
-  background: url(../img/twitter.png) no-repeat 0 0;
-}
-
-.social-button:active > div {
-  opacity: 0.3;
 }
 
 .footer-social .fb {
   position: absolute;
   top: 13px;
   left: 17px;
-  width: 12px;
-  height: 22px;
-  background: url(../img/facebook.png) no-repeat 0 0;
 }
 
 .footer-social .youtube {
   position: absolute;
   top: 16px;
   left: 13px;
-  width: 20px;
-  height: 16px;
-  background: url(../img/youtube.png) no-repeat 0 0;
 }
 
 .footer-copyright {
@@ -673,7 +640,8 @@ img {
   fill: var(--basic-blue-hover);
 }
 
-.copyright-button svg:active {
+.copyright-button svg:active,
+.social-button:active > svg {
   opacity: 0.3;
 }
 
@@ -1180,7 +1148,6 @@ img {
   align-self: center;
 }
 
-
 .sort-list {
   list-style:none;
   display: flex;
@@ -1372,32 +1339,30 @@ img {
   display: flex;
 }
 
-.results-list .stars {
-  margin-top: 28px;
-  margin-right: -112px;
-  height: 17px;
-  width: 100px;
-  transform: rotate(180deg);
-}
-
 .results-list .rating {
   background-color: var(--basic-neutral-gray);
   color: var(--rating-text);
   padding-top: 3px;
 }
 
-.results-list .star {
-  display: inline-block;
-  vertical-align: top;
+.stars {
+  background: url(../img/star.svg) space round;
+  margin-top: 28px;
+  margin-right: -112px;
   height: 17px;
-  width: 18px;
-  background: url(../img/star.svg) 0 0 no-repeat;
-  transform: rotate(180deg);
-  margin-left: 2px;
+  width: 112px;
 }
 
-.stars .hidden {
-  display: none;
+.four-stars {
+  width: 93px;
+}
+
+.three-stars {
+  width: 68px;
+}
+
+.two-stars {
+  width: 44px;
 }
 
 .hotel-page:hover .hotel-name,
