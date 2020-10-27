@@ -121,12 +121,15 @@ img {
 
 .site-navigation {
   list-style: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   margin: 0px;
-  padding: 0px 72px;
+  padding: 0px;
+  padding-left: 5px;
   text-align: center;
 }
+
 
 .site-navigation a:hover,
 .site-navigation a:visited:hover {
@@ -152,24 +155,8 @@ img {
   width: 100px;
 }
 
-.site-navigation li:nth-child(1),
-.site-navigation li:nth-child(2) {
-  justify-self: start;
-  text-align: left;
-}
-
-.site-navigation li:nth-child(2) {
-  margin-left: -35px;
-}
-
-.site-navigation li:nth-child(3),
-.site-navigation li:nth-child(4) {
-  text-align: right;
-  justify-self: end;
-}
-
 .site-navigation li:nth-child(3) {
-  margin-right: -37px;
+  margin-left: 280px;
 }
 
 .main-header-logo {
