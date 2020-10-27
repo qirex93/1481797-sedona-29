@@ -110,13 +110,12 @@ img {
   font-weight: bold;
   color: var(--basic-bold-black);
   background-color: transparent;
-  grid-area: 1/1; 
 }
 
 .main-header {
   background-color: var(--basic-white);
-  display: grid;
-  height: 56px;
+  min-height: 56px;
+  position: relative; 
 }
 
 .site-navigation {
@@ -152,7 +151,7 @@ img {
 
 .site-navigation li {
   padding-top: 15px;
-  width: 100px;
+  width: 200px;
 }
 
 .site-navigation li:nth-child(3) {
@@ -160,8 +159,8 @@ img {
 }
 
 .main-header-logo {
-  justify-self: center;
-  grid-area: 1/1;
+  position: absolute;
+  left: 530px;
   z-index: 1;
 }
 
@@ -356,7 +355,6 @@ img {
   margin: 0px;
   padding: 0px;
   min-height: 256px;
-  
 }
 
 .features-item {
@@ -518,7 +516,7 @@ img {
 .page-footer {
   color: var(--basic-bold-black);
   background-color: var(--basic-white);
-  height: 120px;
+  min-height: 120px;
 }
 
 .main-footer {
@@ -573,8 +571,8 @@ img {
 }
 
 .footer-social a {
-  width: 46px;
-  height: 48px;
+  min-width: 46px;
+  min-height: 48px;
   display: block;
   background-color: var(--basic-blue);
   position: relative;
@@ -1282,7 +1280,7 @@ img {
   padding: 0px;
   grid-template-columns: 135px 1fr auto;
   margin-bottom: 1px;
-  height: 150px;
+  min-height: 150px;
   
 }
 
@@ -1295,6 +1293,7 @@ img {
 .results-list h3 {
   margin-top: 24px;
   margin-left: 1px;
+  max-width: 750px;
 }
 
 .results-list .result-description {
@@ -1324,8 +1323,8 @@ img {
 .results-list .button-blue {
   display: inline-block;
   vertical-align: top;
-  width: 110px;
-  height: 24px;
+  min-width: 110px;
+  min-height: 24px;
   font-size: 14px;
   line-height: 21px;
   padding-top: 3px;
